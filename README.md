@@ -76,11 +76,6 @@ Previous Audits :
 9. Only use `private` to intentionally prevent child contracts from accessing the variable, prefer `internal` for flexibility.
 10. Uninitialized local storage variables(variables that take their value from a state variable) can point to unexpected storage locations in the contract, which can lead to intentional or unintentional vulnerabilities, so mark them as memory, calldata and storage as per the requirement.
 
-## Structs
-
-1. Is a struct necessary? Can the variable be packed raw in storage?
-2. Are its fields packed together (if possible)?
-3. Is the purpose of the struct and all fields documented using natspec?
 
 ## Functions
 
